@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXScale="0.0"
+    android:toXScale="1.4"
+    android:fromYScale="0.0"
+    android:toYScale="1.4"
+    android:pivotX="500"
+    android:pivotY="500"
+    android:duration="3000"
+    android:fillAfter = "true"
+    android:repeatCount = "1"
+    android:repeatMode = "restart"
+    android:interpolator="@android:anim/accelerate_interpolator"/>
+
+<!--
+•android: fromXScale 动画起始时，控件在X轴方向上相对自身的缩放比例，浮点值
+ 比如1.0代表自身无变化，0.5代表缩小1倍，2.0代表放大1倍。
+•android: toXScale动画结束时，控件在X轴方向上相对自身的缩放比例，浮点值。
+•android: fromYScale动画起始时，控件在Y轴方向上相对自身的缩放比例，浮点值。
+•android: toYScale动画结束时，控件在Y轴方向上对自身的缩放比例，浮点值。
+•android: pivotX缩放起始点X轴坐标，可以是数值、百分数、百分数P三种样式，如
+  50、50%、50%p。如果是数值，则表示在当前视图的左上角，即原点处加上50px，作
+  为缩放起始点X轴坐标 如果是50%则表示在当前控件的左上角加上自己宽度的50%
+  作为缩放起始点X轴坐标;如果是50%p，则表示在当前控件的左上角加上父控件宽度的
+  50%作为缩放起始点X坐标。
+•android:pivotY缩放起始点Y轴坐标，取值及含义与android:pivotX相同
+•android:fillAfter:保持动画结束时的状态
+•android:repeatMode = "restart/reverse":设定重复类型
+•android:repeatCount:重复次数
+-->
