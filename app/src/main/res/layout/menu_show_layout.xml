@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright">
+
+    <Button
+        android:id="@+id/menu_item_1"
+        style="@style/MenuItemStyle"
+        android:text="菜单1" />
+
+    <Button
+        android:id="@+id/menu_item_2"
+        android:text="菜单2"
+        style="@style/MenuItemStyle"/>
+
+    <Button
+        android:id="@+id/menu_item_3"
+        android:text="菜单3"
+        style="@style/MenuItemStyle"/>
+
+    <Button
+        android:id="@+id/menu_item_4"
+        android:text="菜单4"
+        style="@style/MenuItemStyle"/>
+
+    <Button
+        android:id="@+id/menu_item_5"
+        android:text="菜单5"
+        style="@style/MenuItemStyle"/>
+
+    
+    <Button
+        android:id="@+id/main_menu"
+        android:text="主菜单"
+        style="@style/menuStyle"/>
+
+
+</RelativeLayout>

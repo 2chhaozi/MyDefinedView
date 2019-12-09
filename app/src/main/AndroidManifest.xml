@@ -12,19 +12,27 @@
         <activity android:name=".MainActivity">
 
         </activity>
+
         <activity android:name=".animinterpolator.AnimActivity">
 
         </activity>
+
         <activity android:name=".animinterpolator.InterpolatorActivity">
 
         </activity>
+
         <activity android:name=".animinterpolator.ScanDemoActivity">
+
+        </activity>
+
+        <activity android:name=".animproperty.PropertyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

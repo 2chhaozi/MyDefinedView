@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/pro_start_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <cn.liuzehao.definedview.animproperty.LetterTextView
+        android:id="@+id/pro_letter_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="A"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintTop_toTopOf="@id/pro_start_anim"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pro_anim_tv1"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.1"/>
+
+    <cn.liuzehao.definedview.animproperty.FallingBallImageView
+        android:id="@+id/obj_ball_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/anim_ball"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pro_start_anim"
+        app:layout_constraintBottom_toTopOf="@id/pro_letter_tv"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintDimensionRatio="w, 1:1"/>
+
+
+    <TextView
+        android:id="@+id/pro_anim_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PropertyAnim"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <cn.liuzehao.definedview.animproperty.LoadingImageView
+        android:id="@+id/pro_load_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pro_anim_tv1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <cn.liuzehao.definedview.animproperty.BallImageView
+        android:id="@+id/pro_ball_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pro_anim_tv1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <cn.liuzehao.definedview.animproperty.MyMenuLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
